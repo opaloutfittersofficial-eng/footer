@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opal Outfitters</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#0f2f25;
+color:white;
+}
+
+header{
+text-align:center;
+padding:30px;
+font-size:35px;
+font-weight:bold;
+letter-spacing:3px;
+}
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.product{
+background:#163d32;
+padding:20px;
+border-radius:10px;
+width:280px;
+text-align:center;
+transition:0.3s;
+}
+
+.product:hover{
+transform:scale(1.05);
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:#1dbf73;
+border:none;
+padding:12px 20px;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.order-section{
+background:#0b221c;
+padding:40px;
+text-align:center;
+}
+
+input,textarea{
+width:80%;
+padding:12px;
+margin:10px;
+border-radius:5px;
+border:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+OPAL OUTFITTERS
+</header>
+
+<section class="products">
+
+<div class="product">
+<img src="https://i.ibb.co/9mmJGDcw/Gemini-Generated-Image-7cb3ue7cb3ue7cb3.png">
+<h3>Luxury Leather Shoe</h3>
+<p>Price: PKR 3999</p>
+<button onclick="scrollToOrder()">Order Now</button>
+</div>
+
+<div class="product">
+<img src="https://i.ibb.co/Z1v4zMXp/Gemini-Generated-Image-e2vjmze2vjmze2vj.png">
+<h3>Classic Formal Shoe</h3>
+<p>Price: PKR 3799</p>
+<button onclick="scrollToOrder()">Order Now</button>
+</div>
+
+<div class="product">
+<img src="https://i.ibb.co/spnN42zk/Gemini-Generated-Image-66bm4o66bm4o66bm.png">
+<h3>Premium Brown Shoe</h3>
+<p>Price: PKR 4199</p>
+<button onclick="scrollToOrder()">Order Now</button>
+</div>
+
+</section>
+
+<section class="order-section" id="order">
+
+<h2>Place Your Order</h2>
+
+<p>Send Payment to: <b>03169382133</b> (Easypaisa / JazzCash)</p>
+
+<form action="https://formsubmit.co/opal.oufittersofficial@gmail.com" method="POST">
+
+<input type="text" name="Name" placeholder="Your Name" required>
+
+<input type="text" name="Phone" placeholder="Your Phone Number" required>
+
+<input type="text" name="Address" placeholder="Your Address" required>
+
+<textarea name="Order" placeholder="Write which shoe you want"></textarea>
+
+<button type="submit">Submit Order</button>
+
+</form>
+
+</section>
+
+<footer>
+© 2026 Opal Outfitters
+</footer>
+
+<script>
+
+function scrollToOrder(){
+document.getElementById("order").scrollIntoView({behavior:"smooth"});
+}
+
+</script>
+
+</body>
+</html>
